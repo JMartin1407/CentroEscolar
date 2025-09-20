@@ -2,10 +2,12 @@ from fastapi import FastAPI, Request, HTTPException, status, Depends
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 import uvicorn
 
+from dao.GradoDAO import GradoDAO
 from dao.AutenticarDAO import AutenticacionDAO
 from dao.HorarioDAO import HorarioDAO
 from dao.GrupoDAO import GrupoDAO
 from dao.database import Conexion
+from models.GradoModel import EventoUpdate, grado, vGradoConGrupos
 from models.HorarioModel import vHorariosDetallados, horario, AsignarClaseInput
 from models.GrupoModel import vGruposDetallados, grupo
 
@@ -171,39 +173,40 @@ def asignarProfesor(id_grupo: int, payload: dict, request: Request, usuario=Depe
     return dao.asignarProfesor(id_grupo, id_profesor)
 
 # ----- GRADOS -----
-@app.get("/grados", tags=["Grados"], summary="Consultar todos los grados")
+@app.get("/grados",response_model=list[vGradoConGrupos], tags=["Grados"], summary="Consultar todos los grados")
 def consultarGrados(request: Request, usuario=Depends(roles_permitidos(["Administrativo", "Docente", "Padre", "Alumno"]))):
-    eDAO = GrupoDAO(request.app.session)
+    eDAO = GradoDAO(request.app.session)
     return eDAO.consultar()
 
 @app.post("/grados", tags=["Grados"], summary="Agregar nuevo grado")
-def agregarGrado(g: grupo, request: Request, usuario=Depends(roles_permitidos(["Administrativo"]))):
-    eDAO = GrupoDAO(request.app.session)
-    return eDAO.agregarGrado(g)
+def agregarGrado(g: grado, request: Request, usuario=Depends(roles_permitidos(["Administrativo"]))):
+    eDAO = GradoDAO(request.app.session)
+    return eDAO.agregar(g)
 
 @app.get("/grados/{id_grado}", tags=["Grados"], summary="Consultar grado por ID")
 def consultarGradoPorId(id_grado: int, request: Request, usuario=Depends(roles_permitidos(["Administrativo"]))):
-    eDAO = GrupoDAO(request.app.session)
-    salida = eDAO.consultarGradoPorId(id_grado)
+    eDAO = GradoDAO(request.app.session)
+    salida = eDAO.consultarPorId(id_grado)
     if not salida.estatus:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=salida.mensaje)
     return salida.grado
 
 @app.put("/grados/{id_grado}", tags=["Grados"], summary="Actualizar grado por ID")
-def actualizarGrado(id_grado: int, g: grupo, request: Request, usuario=Depends(roles_permitidos(["Administrativo"]))):
-    eDAO = GrupoDAO(request.app.session)
-    salida = eDAO.actualizarGrado(id_grado, g)
-    if not salida.estatus:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=salida.mensaje)
+def actualizarGrado(id_grado: int, g: EventoUpdate, request: Request,
+                    usuario=Depends(roles_permitidos(["Administrativo"]))):
+    dao = GradoDAO(request.app.session)
+    salida = dao.actualizar(id_grado, g)
+    if not salida["estatus"]:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=salida["mensaje"])
     return salida
 
-@app.delete("/grados/{id_grado}", tags=["Grados"], summary="Eliminar grado por ID")
+@app.delete("/grados/{id_grado}", tags=["Grados"], summary="Eliminar grado por ID con todos sus grupos asociados")
 def eliminarGrado(id_grado: int, request: Request, usuario=Depends(roles_permitidos(["Administrativo"]))):
-    eDAO = GrupoDAO(request.app.session)
-    salida = eDAO.eliminarGrado(id_grado)
+    eDAO = GradoDAO(request.app.session)
+    salida = eDAO.eliminar(id_grado)
     if not salida.estatus:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=salida.mensaje)
-    return salida
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=salida.mensaje)
+    return {"mensaje": salida.mensaje}
 
 # --- MAIN ---
 if __name__ == "__main__":

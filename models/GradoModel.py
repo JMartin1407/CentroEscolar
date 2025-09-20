@@ -4,23 +4,23 @@ from typing import Optional
 from pydantic import BaseModel
 
 class vGradoConGrupos(SQLModel, table=True):
-    id_grado: Optional[int] = Field(default=None, primary_key=True)
+    id_grado: int = Field(..., primary_key=True)
     NombreGrado: str
-    NombreNivel: str
+    NombreNivel: Optional[str] = None  
 
 
 class grado(SQLModel, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
-    NombreGrado: str
-    id_nivel: int
+    ID_Grado: Optional[int] = Field(default=None, primary_key=True)
+    Nombre_grado: str
+    Nombre_nivel: Optional[str] = None
 
 class Salida(BaseModel):
     estatus:bool
     mensaje:str
 
 class EventoSalida(Salida):
-    grupo: vGradoConGrupos|None = None
+    grado: vGradoConGrupos|None = None
 
 class EventoUpdate(SQLModel):
-    nombre: Optional[str]
-    id_grado: Optional[int]
+    Nombre_grado: Optional[str] = None
+    Nombre_nivel: Optional[str] = None
