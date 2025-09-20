@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DCFA88AF-90D8-7A84-EE67-69DDB916AD5F" containerWithKeyObject="39E9321E-2354-110D-D888-84C5F96481E7" localFKIndex="6E38901B-2ED5-0D76-CF73-6A2B9F774B33" name="Kardex_Alumno_FK">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-27 23:58:15 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<referredTableLongName>Alumno</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6BA42527-EDB3-3CFF-74A0-1357B9DF78F4</referredTableID>
+<keyObject>D6FCD9C5-26AD-C88A-12DD-9702D80D5E37</keyObject>
+<referredKeyID>D6FCD9C5-26AD-C88A-12DD-9702D80D5E37</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Alumno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

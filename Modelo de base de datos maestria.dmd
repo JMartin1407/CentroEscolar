@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo de base de datos maestria" id="AD8041DD-13EB-0F36-AA3C-98394100F90D" version="3.5">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:42:26 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>AD8041DD-13EB-0F36-AA3C-98394100F90D</designId>
+</OSDM_Design>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AB7C7154-2440-B716-A023-F68EC0CE2A00" containerWithKeyObject="3810F1A0-68D0-96F8-F83F-008EF06BCDFA" localFKIndex="AD12EE58-0EA9-7F22-651C-34DAC25719E4" name="Horario_Materia_FK">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-28 00:02:53 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<referredTableLongName>Materia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99BE1BBF-54B1-7CC2-6385-5252BBEC2D3C</referredTableID>
+<keyObject>87C7B19C-E153-A014-2106-9C19D32DD957</keyObject>
+<referredKeyID>87C7B19C-E153-A014-2106-9C19D32DD957</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Materia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

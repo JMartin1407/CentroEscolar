@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5F83B35-D6FE-D6F9-41AE-FC2682F67DC0" name="Conducta">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 00:10:20 UTC</createdTime>
+<generatorID>E7F973DB-17F4-8340-A367-EA22630FF4CE</generatorID>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<typeID>ACF3ACAB-F819-BB8D-D0CD-2051F01581F6</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Conducta" id="9EF0CF20-0B9F-AA16-84DA-5BC746D46321">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 00:10:20 UTC</createdTime>
+<generatorID>B042577A-F15C-D3F2-CAA2-DCC65E9E6D8D</generatorID>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mes" id="6DE73866-BDED-E792-3B27-1C1C7F8D30D0">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 05:25:08 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Año" id="47EBE4A2-7B8E-3513-D065-B884B8007059">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-28 01:41:32 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clasificador" id="D60F675A-4398-F58B-880A-28B0A0AB156D">
+<createdBy>INGMS</createdBy>
+<createdTime>2025-09-15 01:37:43 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Alumno" id="4FE97C88-FECE-FE29-3F9C-B5254F52C88F">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-27 22:39:29 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7D25853-B392-5AA3-5EA3-24BA4A5E31CB" referredColumn="9248CB23-D204-39EE-13EA-BA92B075E203"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1CD8EC90-63F3-682C-003D-0473840C0D18" name="Conducta_PK">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 00:56:25 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EF0CF20-0B9F-AA16-84DA-5BC746D46321"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE06D2E9-AA35-15FF-78C8-4FBD8FA9C409" name="Conducta_Alumno_FK">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-27 22:39:29 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FE97C88-FECE-FE29-3F9C-B5254F52C88F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

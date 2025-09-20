@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="299F8AA4-A076-9BB2-3392-56B525254914" name="Modalidades">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:55:55 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="86B8558C-967E-63B5-7B91-2E9BBEAD47A3">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:56:07 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre(Escolarizado/semiescolarizado" id="DEE94DE2-E383-9242-DD28-ECE1F1A9D2DB">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:56:32 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

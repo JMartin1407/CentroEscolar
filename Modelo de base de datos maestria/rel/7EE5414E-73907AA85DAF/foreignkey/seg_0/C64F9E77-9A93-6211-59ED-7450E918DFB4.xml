@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C64F9E77-9A93-6211-59ED-7450E918DFB4" containerWithKeyObject="6BA42527-EDB3-3CFF-74A0-1357B9DF78F4" localFKIndex="7E83A1C5-0EB0-9635-5015-21931F1D0403" name="Alumno_Modalidad_FK">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-27 19:34:38 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<referredTableLongName>Modalidad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C426302E-30DB-3DEB-8148-2481582B2AB2</referredTableID>
+<keyObject>73A4384C-1B8C-0A19-904D-E206B732F9E2</keyObject>
+<referredKeyID>73A4384C-1B8C-0A19-904D-E206B732F9E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Modalidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

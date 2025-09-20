@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1C52F1A8-9C3C-4710-D7FD-F2BC129254CE" containerWithKeyObject="39E9321E-2354-110D-D888-84C5F96481E7" localFKIndex="F04F7E6A-9095-117C-AA5B-32917B58335E" name="Kardex_Materia_FK">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-10-01 02:59:02 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<referredTableLongName>Materia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99BE1BBF-54B1-7CC2-6385-5252BBEC2D3C</referredTableID>
+<keyObject>87C7B19C-E153-A014-2106-9C19D32DD957</keyObject>
+<referredKeyID>87C7B19C-E153-A014-2106-9C19D32DD957</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Materia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

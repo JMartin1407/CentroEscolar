@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3186938-3895-D9DF-A5B9-2DF1BD1E6FCD" name="Grupo">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 00:10:20 UTC</createdTime>
+<generatorID>BE335704-39A5-19D6-5BCE-6588E7A8674D</generatorID>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<ordsAlias>grupos</ordsAlias>
+<typeID>ACF3ACAB-F819-BB8D-D0CD-2051F01581F6</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Grupo" id="0BFE4E03-3A6A-0ED3-63A4-B107421F1979">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 00:10:20 UTC</createdTime>
+<generatorID>7E01BD3E-F5F9-F262-BE07-4BDF870ECCF1</generatorID>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="90C63774-5A79-7DC1-E4EB-F35438B32768">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 00:10:20 UTC</createdTime>
+<generatorID>327E9F46-8293-538E-C8E2-EA5B46FD33BB</generatorID>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABAF1ECE-F091-54A4-BDB0-730568BC8F2A" name="Grupos_PK">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-26 03:09:03 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BFE4E03-3A6A-0ED3-63A4-B107421F1979"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BDB47B33-6E80-3FC5-82B1-1C53E2C417F1" name="Profesor">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre" id="559D4F55-D92A-6CAD-0B35-071D601FEF83">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellidos" id="03A57CF9-4173-3AE4-D703-E7F43B193423">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CURP" id="83593C51-340D-4A19-290F-CA355912C2DD">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sexo" id="834C322D-BCA3-21A3-8CBB-07191CC07CFB">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Edad" id="07661700-C762-1743-4DB9-CCA01FAA2100">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Correo" id="D5BFFD37-AB6E-42F5-E18F-30AE4789DE08">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="52B8A7B5-8416-62C5-0B9B-3004DC0B3732">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dirrecion" id="C421EF4B-30B6-4FEB-9C6B-87135C6CE038">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:45:49 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nivel de estudio" id="DCA928E6-FB54-C1B4-A7FF-A981611B8B8F">
+<createdBy>INGMS</createdBy>
+<createdTime>2024-09-25 04:46:01 UTC</createdTime>
+<ownerDesignName>Modelo de base de datos maestria</ownerDesignName>
+<engineerTo>
+<item key="7EE5414E-FE20-A5C9-7189-73907AA85DAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
